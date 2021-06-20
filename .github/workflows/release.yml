@@ -25,10 +25,11 @@ jobs:
       uses: nanzm/get-time-action@v1.1
       with:
         timeZone: 0
-        format: 'YYYY-MM-DD HH:mm:ss'
+        format: 'YYYY-MM-DD_HH:mm:ss'
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "prodpush"
         body: "automatic release: ${{ github.event.head_commit.message }}"
         name: ${{ steps.time.outputs.time }}
+        tag: ${{ steps.time.outputs.time }}
         token: ${{ secrets.GITHUB_TOKEN }}
