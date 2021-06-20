@@ -1,0 +1,12 @@
+{
+  "$info_and_docs": "https://github.com/dada513/prodpush#readme",
+  "port": 9000,
+  "return_script_output": false,
+  "scripts": [
+    {
+      "$note": "make sure key is hidden (make it a CI env var), you can generate the keys with the uuidgen command on linux",
+      "key": "KEEP_THIS_SECRET",
+      "command": "bash deploy.sh"
+    }
+  ]
+}
