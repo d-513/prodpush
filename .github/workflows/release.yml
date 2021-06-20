@@ -25,7 +25,7 @@ jobs:
       uses: nanzm/get-time-action@v1.1
       with:
         timeZone: 0
-        format: 'YYYY-MM-DD_HH:mm:ss'
+        format: 'YYYY-MM-DD-SSS'
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "prodpush"
