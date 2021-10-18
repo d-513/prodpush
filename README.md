@@ -1,3 +1,6 @@
+# DEPRECATED
+# USE ANSIBLE ITS AWESOME
+
 # prodpush
 
 Tiny webserver to run a command on request very easily (for example to update production from CI)
